@@ -8,6 +8,11 @@
 <body>
   <div id="cadre">
       <div id="bloc" class="ui-widget-content ui-corner-all"></div>
+      <div id="bloc1" class="ui-widget-content ui-corner-all"></div>
+      <div id="bloc2" class="ui-widget-content ui-corner-all"></div>
+      <div id="bloc3" class="ui-widget-content ui-corner-all"></div>
+      <div id="bloc4" class="ui-widget-content ui-corner-all"></div>
+      <div id="bloc5" class="ui-widget-content ui-corner-all"></div>
   </div>
 <!-- script pour l'animation -->
 <script type="text/javascript" src="test.js"></script>
@@ -15,6 +20,7 @@
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- partie pour l'effet de disparition des éléments -->
   <script>
+    // disparition au clique pour le bloc
   $( function() {
     // run the currently selected effect
     function runEffect() {
@@ -39,6 +45,143 @@
       runEffect();
     });
   } );
+// disparition au clique pour le bloc
+
+// disparition au clique pour le bloc1
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+      // Run the effect
+      $( "#bloc1" ).hide( selectedEffect, options, 1000 );
+    };
+
+    // Set effect from select menu value
+
+    $( '#bloc1' ).click(function() {
+      runEffect();
+    });
+  } );
+// disparition au clique pour le bloc1
+
+// disparition au clique pour le bloc2
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+      // Run the effect
+      $( "#bloc2" ).hide( selectedEffect, options, 1000 );
+    };
+
+    // Set effect from select menu value
+
+    $( '#bloc2' ).click(function() {
+      runEffect();
+    });
+  } );
+// disparition au clique pour le bloc2
+
+// disparition au clique pour le bloc3
+      $( function() {
+        // run the currently selected effect
+        function runEffect() {
+          // get effect type from
+          var selectedEffect = $( "#effectTypes" ).val();
+
+          // Most effect types need no options passed by default
+          var options = {};
+          // some effects have required parameters
+          if ( selectedEffect === "scale" ) {
+            options = { percent: 50 };
+          } else if ( selectedEffect === "size" ) {
+            options = { to: { width: 200, height: 60 } };
+          }
+          // Run the effect
+          $( "#bloc3" ).hide( selectedEffect, options, 1000 );
+        };
+
+        // Set effect from select menu value
+
+        $( '#bloc3' ).click(function() {
+          runEffect();
+        });
+      } );
+// disparition au clique pour le bloc3
+
+// disparition au clique pour le bloc4
+        $( function() {
+          // run the currently selected effect
+          function runEffect() {
+            // get effect type from
+            var selectedEffect = $( "#effectTypes" ).val();
+
+            // Most effect types need no options passed by default
+            var options = {};
+            // some effects have required parameters
+            if ( selectedEffect === "scale" ) {
+              options = { percent: 50 };
+            } else if ( selectedEffect === "size" ) {
+              options = { to: { width: 200, height: 60 } };
+            }
+            // Run the effect
+            $( "#bloc4" ).hide( selectedEffect, options, 1000 );
+          };
+
+          // Set effect from select menu value
+
+          $( '#bloc4' ).click(function() {
+            runEffect();
+          });
+        } );
+// disparition au clique pour le bloc4
+
+// disparition au clique pour le bloc5
+          $( function() {
+            // run the currently selected effect
+            function runEffect() {
+              // get effect type from
+              var selectedEffect = $( "#effectTypes" ).val();
+
+              // Most effect types need no options passed by default
+              var options = {};
+              // some effects have required parameters
+              if ( selectedEffect === "scale" ) {
+                options = { percent: 50 };
+              } else if ( selectedEffect === "size" ) {
+                options = { to: { width: 200, height: 60 } };
+              }
+              // Run the effect
+              $( "#bloc5" ).hide( selectedEffect, options, 1000 );
+            };
+
+            // Set effect from select menu value
+
+            $( '#bloc5' ).click(function() {
+              alert('win');
+              runEffect();
+            });
+          } );
+// disparition au clique pour le bloc5
   </script>
 </body>
 </html>
