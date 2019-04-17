@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+<body>
+  <div id="cadre">
+      <div id="bloc" class="ui-widget-content ui-corner-all"></div>
+  </div>
+<!-- script pour l'animation -->
+<script type="text/javascript" src="test.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- partie pour l'effet de disparition des éléments -->
+  <script>
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+      // Run the effect
+      $( "#bloc" ).hide( selectedEffect, options, 1000 );
+    };
+
+    // Set effect from select menu value
+
+    $( '#bloc' ).click(function() {
+      runEffect();
+    });
+  } );
+  </script>
+</body>
+</html>
