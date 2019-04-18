@@ -9,13 +9,14 @@ function deplacerBloc() {
     var xBloc = parseFloat(getComputedStyle(bloc).top);
     // Conversion en nombre de la largeur du cadre (valeur de la forme "XXpx")
     var xMax = parseFloat(getComputedStyle(cadre).height);
-    if (xBloc  <= xBloc) { // si chaque bloc bouge par rapport à l'autre bloc alors
+    if (xBloc <= xBloc) { // si chaque bloc bouge par rapport à l'autre bloc alors
         // Déplacement du bloc
         bloc.style.top = (xBloc + vitesse) + "px";
         // Demande au navigateur d'appeler deplacerBloc dès que possible
         animationId = requestAnimationFrame(deplacerBloc);
+    }
 
-    } else  {
+    else  {
         // Annulation de l'animation
         cancelAnimationFrame(animationId);
     }
