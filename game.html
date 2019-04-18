@@ -1,31 +1,60 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+
 </head>
+
 <body>
+
   <div id="cadre">
-      <div id="bloc" class="ui-widget-content ui-corner-all"></div>
-      <div id="bloc1" class="ui-widget-content ui-corner-all"></div>
-      <div id="bloc2" class="ui-widget-content ui-corner-all"></div>
-      <div id="bloc3" class="ui-widget-content ui-corner-all"></div>
-      <div id="bloc4" class="ui-widget-content ui-corner-all"></div>
-      <div id="bloc5" class="ui-widget-content ui-corner-all"></div>
-  </div>
+   <div id="bloc"></div>
+    <div id="bloc1"></div>
+     <div id="bloc2"></div>
+      <div id="bloc3"></div>
+       <div id="bloc4"></div>
+        <div id="bloc5"></div>
+   </div>
+
 <!-- script pour l'animation -->
-<script type="text/javascript" src="test.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <script type="text/javascript" src="test.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <!-- partie pour l'effet de disparition des éléments -->
-  <script>
-  $( '#bloc' ).click(function() {
-  $( '#bloc' ).remove();
-});
-$( '#bloc1' ).click(function() {
-$( '#bloc1' ).remove();
-});
-  </script>
-</body>
+
+   <script>
+    $( 'bloc').click(function() {
+     $( '#bloc').remove();
+    });
+
+    $( '#bloc1').click(function() {
+     $( '#bloc1').remove();
+    });
+
+    $( '#bloc2').click(function() {
+     $( '#bloc2').remove();
+    });
+
+    $( '#bloc3').click(function() {
+     $( '#bloc3').remove();
+    });
+
+    $( '#bloc4').click(function() {
+     $( '#bloc4').remove();
+    });
+
+    $( '#bloc5').click(function() {
+     $( '#bloc5').remove();
+    });
+   </script>
+
+ </body>
+
 </html>
