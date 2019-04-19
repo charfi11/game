@@ -20,6 +20,7 @@
        <div id="bloc4"></div>
         <div id="bloc5"></div>
    </div>
+    <p>essayer d'attraper les 5 pièces !</p>
 
 <!-- script pour l'animation -->
 
@@ -29,38 +30,43 @@
 
   <!-- partie pour l'effet de disparition des éléments -->
 
-   <script>
-//trouver un moyen pour n'avoir qu'une fonction !
-   $( '#bloc').click(function() {
-    $( '#bloc').remove();
-   });
+    <script>
 
-    $( '#bloc1').click(function() {
-     $( '#bloc1').remove();
-    });
+//trouver un moyen pour n'avoir qu'une fonction !//
 
-    $( '#bloc2').click(function() {
-     $( '#bloc2').remove();
-    });
+      $( '#bloc').click(function() {
+      $( '#bloc').remove();
+     });
 
-    $( '#bloc3').click(function() {
-     $( '#bloc3').remove();
-    });
+     $( '#bloc1').click(function() {
+      $( '#bloc1').remove();
+     });
 
-    $( '#bloc4').click(function() {
-     $( '#bloc4').remove();
-    });
+     $( '#bloc2').click(function() {
+      $( '#bloc2').remove();
+     });
 
-    $( '#bloc5').click(function() {
-     $( '#bloc5').remove();
-    });
+     $( '#bloc3').click(function() {
+      $( '#bloc3').remove();
+     });
+
+     $( '#bloc4').click(function() {
+      $( '#bloc4').remove();
+     });
+
+     $( '#bloc5').click(function() {
+      alert('win'); // simule une victoire car l'animation reprend après //
+     });
 
 // permet de démarrer le jeu
-    if ( $('cadre'))
-    {
+
+     if ( $('cadre'))
+     {
       alert('start');
-    }
+     }
+
 // il faut une fin au jeu !
+
    </script>
 
  </body>
