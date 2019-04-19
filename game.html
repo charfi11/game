@@ -57,11 +57,12 @@
 
      $( '#bloc5').click(function() {
        document.write('!');
-        document.body.style.backgroundImage = "url('img/win.jpg')"; // simule une victoire car l'animation reprend après //
+        document.body.style.backgroundImage = "url('img/win.jpg')"; // simule une victoire en faisant disparaitre le tout//
      });
 
      $( '#bloc6').click(function() {
-      document.write('les ronds ne sont pas vos amis !!'); // fait disparaitre le tout pour la défaite //
+      document.write('les ronds ne sont pas vos amis !!');
+      document.body.style.backgroundImage = "url('img/lose.jpeg')"; // fait disparaitre le tout pour la défaite //
      });
 
 // permet de démarrer le jeu
