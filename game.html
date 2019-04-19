@@ -21,8 +21,7 @@
         <div id="bloc5"></div>
          <div id="bloc6"></div>
    </div>
-    <p>essayer d'attraper les 5 blocs !</p>
-     <p>attention les ronds ne sont pas vos amis...</p>
+    <p>attrapez les tous !</p>
 
 <!-- script pour l'animation -->
 
@@ -57,11 +56,12 @@
      });
 
      $( '#bloc5').click(function() {
-      alert('win'); // simule une victoire car l'animation reprend après //
+       document.write('!');
+        document.body.style.backgroundImage = "url('img/win.jpg')"; // simule une victoire car l'animation reprend après //
      });
 
      $( '#bloc6').click(function() {
-      alert('lose'); // simule une défaite car l'animation reprend après //
+      document.write('les ronds ne sont pas vos amis !!'); // fait disparaitre le tout pour la défaite //
      });
 
 // permet de démarrer le jeu
