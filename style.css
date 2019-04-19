@@ -74,3 +74,18 @@
     background: gold;
     position: relative; /* Permettra de décaler le bloc */
 }
+
+/*****bloc lose*****/
+
+#bloc6 {
+  margin: 0px;
+  margin-left: 80px;
+  bottom: 300px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border-color: red;
+    border: dotted;
+    position: relative; /* Permettra de décaler le bloc */
+}

@@ -19,8 +19,10 @@
       <div id="bloc3"></div>
        <div id="bloc4"></div>
         <div id="bloc5"></div>
+         <div id="bloc6"></div>
    </div>
-    <p>essayer d'attraper les 5 pièces !</p>
+    <p>essayer d'attraper les 5 blocs !</p>
+     <p>attention les ronds ne sont pas vos amis...</p>
 
 <!-- script pour l'animation -->
 
@@ -56,6 +58,10 @@
 
      $( '#bloc5').click(function() {
       alert('win'); // simule une victoire car l'animation reprend après //
+     });
+
+     $( '#bloc6').click(function() {
+      alert('lose'); // simule une défaite car l'animation reprend après //
      });
 
 // permet de démarrer le jeu

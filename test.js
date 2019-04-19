@@ -75,3 +75,15 @@ function deplacerBloc5() {
     }
 }
 animationId = requestAnimationFrame(deplacerBloc5); // Début de l'animation
+
+//********lose*********//
+
+function deplacerBloc6() {
+  var vitesse = 2;
+    var xBloc = parseFloat(getComputedStyle(bloc6).top);
+    if (xBloc <= xBloc) {
+        bloc6.style.top = (xBloc + vitesse) + "px";
+        animationId = requestAnimationFrame(deplacerBloc6);
+    }
+}
+animationId = requestAnimationFrame(deplacerBloc6); // Début de l'animation
